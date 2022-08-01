@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Javascript</title>
+
+			
+
+            <style type="text/css">
+                .square{
+                    width:130px;
+                    height:130px;
+                    border-radius: 50%;
+                    float: left;
+                    margin-right: 50px;
+
+                }
+
+                #red-square{
+                    background-color: red;
+                }
+                #blue-square{
+                    background-color: blue;
+                }
+                #green-square{
+                    background-color: green;
+                }
+                
+            </style>
+
+			
+        </head>
+
+        <body>
+
+            <div class = "square" id="red-square">One</div>
+            <div class = "square" id="blue-square">Two</div>
+            <div class = "square" id="green-square">Three</div>
+
+			
+
+			
+
+            <script type="text/javascript">
+
+				document.getElementById("red-square").onclick = function(){
+				document.getElementById("red-square").style.display = "none";
+			}
+				document.getElementById("blue-square").onclick = function(){
+				document.getElementById("blue-square").style.display = "none";
+			}
+				document.getElementById("green-square").onclick = function(){
+				document.getElementById("green-square").style.display = "none";
+			}
+            </script>
+
+        </body>
+
+
+	</html>
+
+
+

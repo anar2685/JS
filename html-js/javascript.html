@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>JavaScript</title>
+    
+</head>
+<body>
+    <p id="text">Hello World!!</p>
+    <button id="fButton">Change text!</button>
+
+<!-- <button onclick = "alert('Hello!')">Click!</button> -->
+
+    <p id="secPar">Java Script is ... </p>
+    <button id="secButton">Change2!</button>
+
+    <p id="emptyPar"></p>
+    <button id="thrButton">Change3!</button>
+
+    <p id = "moreText">This is some text!</p>
+    <button id="styleText">Style text</button>
+
+    <p id="abraCadabra">AbraCadabra</p>
+    <button id="abraC">Abra</button>
+
+    <script type = "text/JavaScript">
+
+    
+
+    document.getElementById("fButton").onclick = function(){
+
+        document.getElementById("text").innerHTML = "Hello Anar"
+    
+
+    }
+    document.getElementById("secButton").onclick = function(){
+
+document.getElementById("secPar").innerHTML = "I thing " + document.getElementById("secPar").innerHTML + "awesome"
+
+
+    }
+    document.getElementById("thrButton").onclick = function(){
+
+document.getElementById("emptyPar").innerHTML = "<h1>Hello Mr. Anar <h1>"
+
+    }
+
+    document.getElementById("styleText").onclick = function () {
+       
+        document.getElementById("moreText").style.color = "red";
+        document.getElementById("moreText").style.font = "50px";           
+    }
+    document.getElementById("abraC").onclick = function () {
+
+        document.getElementById("abraCadabra").style.display = "none";
+    }
+
+        // document.getElementById("text").innerHTML = "Hello Anar!"; //"document" - означает что будем искать внутри этого документа, 
+        //поиск по id "getElementById", Имя id "text", "innerHTML" - элемент который был = замена текста на новый = ""
+
+        //alert ("Page is Loaded!"); // ; - используется в случае последовательного кода одного за другим.
+
+    </script>
+    
+</body>
+</html>

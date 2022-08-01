@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+    <title>JavaScript</title>
+    
+    </head>
+
+    <body>
+        
+        <p>How many fingers am i holding up?</p>
+
+        <p><input type="text" id="inputNumber"><button id="buttonG">Guess</button></p>
+            
+        <script type = "text/JavaScript">
+
+        document.getElementById("buttonG").onclick = function(){
+
+        var randomNum = (Math.floor(Math.random() * 6));
+
+        //var randomNum = Math.random();
+        //randomNum = randomNum * 6;
+        //randomNum = Math.floor(randomNum);
+
+        var inputNum = document.getElementById("inputNumber").value;
+
+        //var magicWord = "abracadabra";
+
+        if(inputNum == randomNum) {
+
+                alert(randomNum + " You Won!");
+            
+        }else{
+
+                alert(randomNum + " Try Again!");
+
+        }
+        
+        }
+
+        </script>
+    
+    </body>
+
+</html>
